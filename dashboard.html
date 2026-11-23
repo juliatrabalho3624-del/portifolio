@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>Painel Administrativo | Seu Nome</title>
+    <meta name="description" content="Painel de cadastro de novos projetos no portfólio.">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <header>
+        <nav aria-label="Menu principal">
+            <div class="logo"><a href="index.html"><img src="img/logo.svg" alt="Logo da Marca Pessoal"></a></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="quemsoueu.html">Quem sou eu</a></li>
+                <li><a href="portfolio.html">Portfólio</a></li>
+            </ul>
+            <div class="auth-link">
+                <a href="login.html" aria-label="Entrar na área restrita"><i data-lucide="lock"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-container largo">
+            <h1>Cadastrar Novo Projeto</h1>
+            <p>Preencha os dados abaixo para publicar um trabalho na vitrine do portfólio.</p>
+
+            <form id="form-projeto">
+                <div class="campo-grupo">
+                    <label for="titulo">Título do Projeto</label>
+                    <input type="text" id="titulo" name="titulo" required placeholder="Ex: Aplicativo de Controle Financeiro">
+                </div>
+                <div class="campo-grupo">
+                    <label for="descricao">Descrição</label>
+                    <textarea id="descricao" name="descricao" required placeholder="Explique o que o projeto faz e quais tecnologias foram usadas..."></textarea>
+                </div>
+                <div class="campo-grupo">
+                    <label for="imagem">Caminho ou URL da Imagem</label>
+                    <input type="text" id="imagem" name="imagem" required placeholder="Ex: img/projeto2.webp">
+                </div>
+                <div class="campo-grupo">
+                    <label for="link">Link do Projeto</label>
+                    <input type="url" id="link" name="link" required placeholder="https://github.com/seu-usuario/projeto">
+                </div>
+                <button type="submit" class="btn btn-full">Publicar no Portfólio</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 [Seu Nome]. Todos os direitos reservados.</p>
+    </footer>
+    <script type="module" src="js/dashboard.js"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+</body>
+</html>

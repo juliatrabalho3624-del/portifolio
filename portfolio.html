@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Projetos | Seu Nome</title>
+    <meta name="description" content="Explore os projetos desenvolvidos por [Seu Nome] nas áreas de desenvolvimento web, automação e tecnologia.">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <header>
+        <nav aria-label="Menu principal">
+            <div class="logo"><a href="index.html"><img src="img/logo.svg" alt="Logo da Marca Pessoal"></a></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="quemsoueu.html">Quem sou eu</a></li>
+                <li><a href="portfolio.html">Portfólio</a></li>
+            </ul>
+            <div class="auth-link">
+                <a href="login.html" aria-label="Entrar na área restrita"><i data-lucide="lock"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="cabecalho-pagina">
+            <h1>Meus Projetos</h1>
+            <p>Vitrine dos trabalhos práticos, sites e experimentos desenvolvidos durante os estudos.</p>
+        </div>
+
+        <section class="grid-projetos" id="lista-projetos">
+            <!-- Exemplo de projeto fixo dentro de <article> -->
+            <article class="card-projeto">
+                <img src="img/projeto1.webp" alt="Tela inicial do projeto de automação residencial">
+                <div class="card-conteudo">
+                    <h2>Sistema de Irrigação Automatizada</h2>
+                    <p>Protótipo desenvolvido com sensores de umidade para otimizar o uso de água na agricultura familiar.</p>
+                    <a href="#" class="btn">Acessar detalhes do projeto</a>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 [Seu Nome]. Todos os direitos reservados.</p>
+    </footer>
+    <script>lucide.createIcons();</script>
+    <script src="js/portfolio.js"></script>
+</body>
+</html>

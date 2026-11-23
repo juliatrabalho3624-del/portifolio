@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>Acesso Restrito | Seu Nome</title>
+    <meta name="description" content="Área de autenticação administrativa do portfólio.">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <header>
+        <nav aria-label="Menu principal">
+            <div class="logo"><a href="index.html"><img src="img/logo.svg" alt="Logo da Marca Pessoal"></a></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="quemsoueu.html">Quem sou eu</a></li>
+                <li><a href="portfolio.html">Portfólio</a></li>
+            </ul>
+            <div class="auth-link">
+                <a href="login.html" aria-label="Entrar na área restrita"><i data-lucide="lock"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-container">
+            <h1>Área Restrita</h1>
+            <p>Entre com suas credenciais para gerenciar os projetos do portfólio.</p>
+            
+            <div id="erro-login" class="mensagem-erro">Usuário ou senha incorretos.</div>
+
+            <form id="form-login">
+                <div class="campo-grupo">
+                    <label for="usuario">Usuário</label>
+                    <input type="text" id="usuario" name="usuario" required placeholder="Digite seu usuário">
+                </div>
+                <div class="campo-grupo">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" name="senha" required placeholder="Digite sua senha">
+                </div>
+                <button type="submit" class="btn btn-full">Entrar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 [Seu Nome]. Todos os direitos reservados.</p>
+    </footer>
+    <script>lucide.createIcons();</script>
+    <script src="js/login.js"></script>
+</body>
+</html>

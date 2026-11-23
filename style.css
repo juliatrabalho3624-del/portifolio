@@ -1,0 +1,216 @@
+/* =========================================
+   8. PÁGINA QUEM SOU EU (quemsoueu.html)
+   ========================================= */
+.sobre-container {
+    background-color: var(--cor-superficie);
+    border: 1px solid var(--cor-borda);
+    border-radius: 16px;
+    padding: 2.5rem;
+    box-shadow: var(--sombra-suave);
+}
+
+.sobre-container h1 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+.sobre-container h2 {
+    font-size: 1.4rem;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+    color: var(--cor-primaria);
+}
+
+.sobre-container p {
+    color: var(--cor-texto-suave);
+    margin-bottom: 1rem;
+}
+
+.lista-info {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.lista-info li {
+    background-color: var(--cor-fundo);
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px solid var(--cor-borda);
+    font-size: 0.95rem;
+}
+
+/* =========================================
+   9. VITRINE DE PROJETOS (portfolio.html)
+   ========================================= */
+.cabecalho-pagina {
+    margin-bottom: 2.5rem;
+}
+
+.cabecalho-pagina h1 {
+    font-size: 2.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.cabecalho-pagina p {
+    color: var(--cor-texto-suave);
+    font-size: 1.1rem;
+}
+
+.grid-projetos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.75rem;
+}
+
+/* Cada projeto dentro de uma tag <article> */
+.card-projeto {
+    background-color: var(--cor-superficie);
+    border: 1px solid var(--cor-borda);
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: var(--sombra-suave);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-projeto:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 20px -5px rgba(0, 0, 0, 0.08);
+}
+
+.card-projeto img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-bottom: 1px solid var(--cor-borda);
+}
+
+.card-conteudo {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.card-conteudo h2 {
+    font-size: 1.25rem;
+    margin-bottom: 0.6rem;
+    color: var(--cor-texto);
+}
+
+.card-conteudo p {
+    color: var(--cor-texto-suave);
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+    flex: 1;
+}
+
+.card-conteudo .btn {
+    text-align: center;
+    width: 100%;
+}
+
+/* =========================================
+   10. FORMULÁRIOS (login.html e dashboard.html)
+   ========================================= */
+.form-container {
+    max-width: 460px;
+    margin: 1rem auto;
+    background-color: var(--cor-superficie);
+    border: 1px solid var(--cor-borda);
+    border-radius: 16px;
+    padding: 2.25rem;
+    box-shadow: var(--sombra-suave);
+}
+
+.form-container.largo {
+    max-width: 650px;
+}
+
+.form-container h1 {
+    font-size: 1.85rem;
+    margin-bottom: 0.5rem;
+}
+
+.form-container p {
+    color: var(--cor-texto-suave);
+    margin-bottom: 1.75rem;
+    font-size: 0.95rem;
+}
+
+.campo-grupo {
+    margin-bottom: 1.25rem;
+}
+
+.campo-grupo label {
+    display: block;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 0.45rem;
+    color: var(--cor-texto);
+}
+
+.campo-grupo input,
+.campo-grupo textarea {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--cor-borda);
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 0.95rem;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.campo-grupo input:focus,
+.campo-grupo textarea:focus {
+    outline: none;
+    border-color: var(--cor-primaria);
+    background-color: var(--cor-superficie);
+}
+
+.campo-grupo textarea {
+    min-height: 110px;
+    resize: vertical;
+}
+
+.btn-full {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+.mensagem-erro {
+    color: #dc2626;
+    background-color: #fef2f2;
+    border: 1px solid #fecaca;
+    padding: 0.75rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    display: none;
+}
+
+.rodape-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 0.75rem;
+}
+
+.rodape-links a {
+    color: var(--cor-primaria);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.rodape-links a:hover {
+    text-decoration: underline;
+}
